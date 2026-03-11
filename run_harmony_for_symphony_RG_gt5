@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+#BSUB -J python
+#BSUB -n 1
+#BSUB -oo %J.stdout
+#BSUB -eo %J.stderr
+#BSUB -R rusage[mem=200GB] 
+#BSUB -o /home/labs/reinerlab/miridan/jobs_output
+#BSUB -q  medium
+#BSUB -M 200GB
+python /home/labs/reinerlab/miridan/monod_backup/src/python/run_harmony_for_symphony_no_pca.py -ar /home/labs/reinerlab/miridan/human_development_adata/ClassRadialGlia_for_harmony_gt5.h5ad -o /home/labs/reinerlab/miridan/human_development_adata/ClassRadialGlia_for_harmony_symp_gt5
