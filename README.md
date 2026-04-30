@@ -20,6 +20,9 @@
   and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution.
 </p>
 
+## License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
 <p>
   The script <code>label_transfer.R</code> was used to annotate the cortical
   scRNA-seq dataset using the Braun et al. dataset as a reference.
