@@ -19,6 +19,19 @@ This repository contains the code used to generate the data and the figures pres
 
 
 ## system-requirements
+- R (>= 4.4.0)
+- RStudio (optional, but recommended)
+The following R packages are required:
+- Seurat (>= 4.3.0)
+- dplyr
+- ggplot2
+- patchwork
+- Matrix
+
+### Operating systems
+Tested on:
+- macOS (Ventura)
+- Linux (Ubuntu 22.04)
 ## License
 This project is licensed under the MIT License – see the LICENSE file for details.
 ## issues
