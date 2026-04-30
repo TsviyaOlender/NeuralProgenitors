@@ -47,7 +47,7 @@ All analyses were performed in R using RStudio.
 
 To run the code, install R (version 4.4.1 or later) and the required R packages listed above. The scripts can then be executed directly within RStudio.
 ## Usage
-The scripts `cortical_analysis.R` and `cortical_analysis.R` accept Cell Ranger count matrices in Matrix Market format (mtx, as in the filtered_feature_bc_matrix directory).
+The scripts `cortical_analysis.R` and `rostal_analysis.R` accept Cell Ranger count matrices in Matrix Market format (mtx, as in the filtered_feature_bc_matrix directory).
 As example matrix is provided in this repository. To run the scripts, edit lines 47-50 in `cortical_analysis.R` and  30-47 in `rostal_analysis.R` to match the file structure in your home directory. The expected output is RDS file.
 
 
