@@ -141,26 +141,3 @@ write.table(labels_df,
             sep = "\t", quote = FALSE, row.names = FALSE, col.names = FALSE)
 
 ###########################################################
-#options(future.globals.maxSize = 20 * 1024^3) 
-sub<-NormalizeData(sub)
-saveRDS(sub,file="/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_v3_5Oct25.rds")
-sub <- FindVariableFeatures(sub, verbose = FALSE)
-sub <- ScaleData(sub)
-sub <- RunPCA(sub)
-sub<-RunUMAP(sub, dims = 1:40, verbose = FALSE)
-DimPlot_scCustom(sub.group.by="tissue")
-
-sub <- SketchData(object = sub, ncells = 100000, method = "LeverageScore", sketched.assay = "sketch")
-sub
-DefaultAssay(sub) <- "sketch"
-
-sub <- FindVariableFeatures(sub)
-sub <- ScaleData(sub)
-sub <- RunPCA(sub)
-elbow_plot<-ElbowPlot(sub,ndims=50)
-DimHeatmap(sub, dims = 40:50, cells = 500, balanced = TRUE)
-sub<-RunUMAP(sub, dims = 1:40, verbose = FALSE)
-DimPlot_scCustom(sub.group.by="tissue")
-#sub <- FindNeighbors(sub, dims = 1:40)
-#sub <- FindClusters(sub, resolution = 2)
-saveRDS(sub,file="/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_v3_4Aug25_sketch_100K.rds")
