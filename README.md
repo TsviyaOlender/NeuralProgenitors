@@ -5,39 +5,25 @@
 - [License](#license)
 - [Issues](#issues)
 - [Citation](#citation)
-
-
-# Overview
-<p>
-  This repository contains the code used to generate the data presented in the manuscript <em>“Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly.”</em>
+---
+## Overview
+This repository contains the code used to generate the data presented in the manuscript <em>“Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly.”</em>
 The following scripts are included:
 
-</p>
-# repo-contents
-<p>The following scripts:</p>
-<ul>
-  <li><code>cortical_analysis.R</code></li>
-  <li><code>rostal_analysis.R</code></li>
-</ul>
-<p>were used to analyze the scRNA-seq data using Seurat.</p>
+## Repo Contents
 
-<p>
-  The script <code>read_human_embryonic_atlas.R</code> was used to process the
-  data from Braun et al. (2023), <em>Science</em> (downloaded from
-  <a href="https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077">
-    https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077
-  </a>),
-  and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution.
-</p>
+The following scripts:
 
+- `cortical_analysis.R`
+- `rostal_analysis.R`
+- `label_transfer.R`
+were used to analyze the scRNA-seq data using Seurat.
 
+The script `read_human_embryonic_atlas.R` was used to process the data from Braun et al. (2023), *Science* (downloaded from https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077), and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution.
+The script <code>label_transfer.R</code> was used to annotate the corticalscRNA-seq dataset using the Braun et al. dataset as a reference.
 
-<p>
-  The script <code>label_transfer.R</code> was used to annotate the cortical
-  scRNA-seq dataset using the Braun et al. dataset as a reference.
-</p>
-# system-requirements
-# License
+## system-requirements
+## License
 This project is licensed under the MIT License – see the LICENSE file for details.
-# issues
-# citation
+## issues
+## citation
