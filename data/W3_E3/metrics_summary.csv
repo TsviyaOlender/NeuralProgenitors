@@ -1,0 +1,80 @@
+Category,Library Type,Grouped By,Group Name,Metric Name,Metric Value
+Cells,Gene Expression,,,Cells,"1,055"
+Cells,Gene Expression,,,Confidently mapped antisense,12.44%
+Cells,Gene Expression,,,Confidently mapped to exonic regions,62.35%
+Cells,Gene Expression,,,Confidently mapped to genome,94.85%
+Cells,Gene Expression,,,Confidently mapped to intergenic regions,4.07%
+Cells,Gene Expression,,,Confidently mapped to intronic regions,28.43%
+Cells,Gene Expression,,,Confidently mapped to transcriptome,77.73%
+Cells,Gene Expression,,,Mapped to genome,97.11%
+Cells,Gene Expression,,,Median UMI counts per cell,"5,509"
+Cells,Gene Expression,,,Median genes per cell,"2,284"
+Cells,Gene Expression,,,Median reads per cell,"12,714"
+Cells,Gene Expression,,,Number of reads from cells called from this sample,"16,399,875"
+Cells,Gene Expression,,,Total genes detected,"24,888"
+Cells,Gene Expression,Physical library ID,GEX_NDE1_KO,Cell-associated barcodes identified as multiplets,715 (3.31%)
+Cells,Gene Expression,Physical library ID,GEX_NDE1_KO,Cell-associated barcodes not assigned any CMOs,"12,599 (58.29%)"
+Cells,Gene Expression,Physical library ID,GEX_NDE1_KO,Cells assigned to other samples,"7,244 (33.52%)"
+Cells,Gene Expression,Physical library ID,GEX_NDE1_KO,Cells assigned to this sample,"1,055 (4.88%)"
+Library,Gene Expression,Fastq ID,GEX_NDE1_KO,Number of reads,"448,093,359"
+Library,Gene Expression,Fastq ID,GEX_NDE1_KO,Number of short reads skipped,0
+Library,Gene Expression,Fastq ID,GEX_NDE1_KO,Q30 RNA read,91.0%
+Library,Gene Expression,Fastq ID,GEX_NDE1_KO,Q30 UMI,93.4%
+Library,Gene Expression,Fastq ID,GEX_NDE1_KO,Q30 barcodes,93.7%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Cell-associated barcodes identified as multiplets,715 (3.31%)
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Cell-associated barcodes not assigned any CMOs,"12,599 (58.29%)"
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Cells assigned to a sample,"8,299 (38.40%)"
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Confidently mapped antisense,10.59%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Confidently mapped reads in cells,91.25%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Confidently mapped to exonic regions,65.41%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Confidently mapped to genome,94.06%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Confidently mapped to intergenic regions,3.80%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Confidently mapped to intronic regions,24.84%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Confidently mapped to transcriptome,79.09%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Estimated number of cells,"21,613"
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Mapped to genome,96.30%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Mean reads per cell,"20,733"
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Number of reads,"448,093,359"
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Number of reads in the library,"448,093,359"
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Sequencing saturation,45.47%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Valid UMIs,99.96%
+Library,Gene Expression,Physical library ID,GEX_NDE1_KO,Valid barcodes,97.58%
+Library,Multiplexing Capture,,,Cell-associated barcodes identified as multiplets,715 (3.31%)
+Library,Multiplexing Capture,,,Cells assigned to a sample,"8,299 (38.40%)"
+Library,Multiplexing Capture,,,Estimated number of cell-associated barcodes,"21,613"
+Library,Multiplexing Capture,,,Median CMO UMIs per cell,"2,011"
+Library,Multiplexing Capture,,,Number of samples assigned at least one cell,4
+Library,Multiplexing Capture,,,Singlet capture ratio,0.45
+Library,Multiplexing Capture,CMO Name,CMO301,CMO signal-to-noise ratio,3.45
+Library,Multiplexing Capture,CMO Name,CMO301,Cells assigned to CMO,28.98%
+Library,Multiplexing Capture,CMO Name,CMO301,Fraction reads in cell-associated barcodes,53.14%
+Library,Multiplexing Capture,CMO Name,CMO302,CMO signal-to-noise ratio,1.79
+Library,Multiplexing Capture,CMO Name,CMO302,Cells assigned to CMO,12.71%
+Library,Multiplexing Capture,CMO Name,CMO302,Fraction reads in cell-associated barcodes,34.06%
+Library,Multiplexing Capture,CMO Name,CMO303,CMO signal-to-noise ratio,1.58
+Library,Multiplexing Capture,CMO Name,CMO303,Cells assigned to CMO,16.15%
+Library,Multiplexing Capture,CMO Name,CMO303,Fraction reads in cell-associated barcodes,36.52%
+Library,Multiplexing Capture,CMO Name,CMO304,CMO signal-to-noise ratio,3.47
+Library,Multiplexing Capture,CMO Name,CMO304,Cells assigned to CMO,42.16%
+Library,Multiplexing Capture,CMO Name,CMO304,Fraction reads in cell-associated barcodes,56.56%
+Library,Multiplexing Capture,Fastq ID,CMO_NDE1_KO,Number of reads,"136,690,289"
+Library,Multiplexing Capture,Fastq ID,CMO_NDE1_KO,Number of short reads skipped,0
+Library,Multiplexing Capture,Fastq ID,CMO_NDE1_KO,Q30 RNA read,95.1%
+Library,Multiplexing Capture,Fastq ID,CMO_NDE1_KO,Q30 UMI,94.5%
+Library,Multiplexing Capture,Fastq ID,CMO_NDE1_KO,Q30 barcodes,94.0%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Cell-associated barcodes identified as multiplets,715 (3.31%)
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Cell-associated barcodes not assigned any CMOs,"12,599 (58.29%)"
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Cells assigned to a sample,"8,299 (38.40%)"
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Estimated number of cell-associated barcodes,"21,613"
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Fraction CMO reads,98.34%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Fraction CMO reads usable,41.89%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Fraction reads from multiplets,0.00%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Fraction reads in cell-associated barcodes,42.84%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Fraction unrecognized CMO,1.66%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Mean reads per cell-associated barcode,"6,324"
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Median CMO UMIs per cell-associated barcode,"2,254"
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Number of reads,"136,690,289"
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Samples assigned at least one cell,4
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Sequencing saturation,8.19%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Valid UMIs,100.00%
+Library,Multiplexing Capture,Physical library ID,CMO_NDE1_KO,Valid barcodes,99.25%
