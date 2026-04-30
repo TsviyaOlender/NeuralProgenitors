@@ -30,7 +30,6 @@ The following R packages are required:
 
 ### Operating systems
 Tested on:
-- macOS (Ventura)
 - Linux (Ubuntu 22.04)
 ## License
 This project is licensed under the MIT License – see the LICENSE file for details.
