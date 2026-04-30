@@ -6,7 +6,7 @@ orly<-FindVariableFeatures(orly)
 orly<-ScaleData(orly)
 DefaultAssay(orly)<-"RNA"
 #
-sub<-readRDS("/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_v3_4Aug25_sketch_100K.rds")
+sub<-readRDS("/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_v3_4Aug25.rds")
 DefaultAssay(sub)<-'sketch'
 counts_mat <- GetAssayData(sub, assay = "sketch", slot = "counts")
 query <- CreateSeuratObject(counts = counts_mat, meta.data = sub@meta.data)
