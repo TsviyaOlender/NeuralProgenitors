@@ -2,6 +2,7 @@
 - [Overview](#overview)
 - [Repo Contents](#repo-contents)
 - [System Requirements](#system-requirements)
+- [Installation guide] (#Installation guide)
 - [License](#license)
 - [Issues](#issues)
 - [Citation](#citation)
@@ -39,6 +40,10 @@ The following R packages were used:
 - scCustomize (3.0.1)
 - SingleR (2.6.0)
 - SingleCellExperiment (1.26.0)
+## Installation guide
+All analyses were performed in R using RStudio.
+
+To run the code, install R (version 4.4.1 or later) and the required R packages listed above. The scripts can then be executed directly within RStudio.
 
 ## License
 This project is licensed under the MIT License – see the LICENSE file for details.
