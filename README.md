@@ -1,7 +1,8 @@
 # Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly
 <p>
-  This repository includes the code that was used to generate the data presented in
-  <em>“Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly.”</em>
+  This repository contains the code used to generate the data presented in the manuscript <it>“Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly.”</it>
+The following scripts are included:
+
 </p>
 
 <p>The following scripts:</p>
