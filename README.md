@@ -31,10 +31,10 @@ For processing large scRNA-seq datasets, at least 16 GB RAM is recommended.
 ### R package dependencies
 The following R packages were used:
 
-- Seurat (5.3.0)
-- SeuratObject (5.0.2)
+- Seurat ( >=4.1.0)
+- SeuratObject (>=4.0.4)
 - dplyr (1.1.4)
-- ggplot2 (3.5.1)
+- ggplot2 (>=3.3.5)
 - patchwork (1.2.0)
 - cowplot (1.1.3)
 - rio (1.2.3)
