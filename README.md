@@ -16,7 +16,7 @@ This repository contains the code used to generate the data and the figures pres
 - `R`
   
 `cortical_analysis.R` and `rostal_analysis.R` are the main scripts used to analyze the scRNA-seq data. 
-`read_human_embryonic_atlas.R` was used to process the data from Braun et al. (2023), *Science* (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077), and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution.
+`read_human_embryonic_atlas.R` was used to process the data from Braun et al. (2023), *Science* (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077), and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution. This script make use in functions that are in the file `seurat_functions_V2.R`
 `label_transfer.R` was used to annotate the cortical scRNA-seq dataset using the Braun et al. dataset as a reference.
 ## System Requirements
 
@@ -42,6 +42,7 @@ The following R packages were used:
 - scCustomize (3.0.1)
 - SingleR (2.6.0)
 - SingleCellExperiment (1.26.0)
+- zellkonverter (to convert H5AD to seurat)
 ## Installation guide
 All analyses were performed in R using RStudio.
 
@@ -52,6 +53,8 @@ The scripts `cortical_analysis.R` and `rostal_analysis.R` accept Cell Ranger cou
 To run the scripts, edit lines 47–50 in `cortical_analysis.R` and lines 30–47 in `rostal_analysis.R` to match your local file structure.
 
 The output is an .rds file with seurat object.
+
+To run the script `read_human_embryonic_atlas.R` you need to download the file b40faec8-21d7-4d6c-aa69-4146503d3c64.h5ad from cellxgene (#https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077)
 
 
 ## Data Availability
