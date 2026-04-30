@@ -3,6 +3,7 @@
 - [Repo Contents](#repo-contents)
 - [System Requirements](#system-requirements)
 - [Installation guide](#Installation-guide)
+- [Usage](#Usage)
 - [Data Availability](#Data-Availability)
 - [License](#license)
 - [Issues](#issues)
@@ -45,6 +46,10 @@ The following R packages were used:
 All analyses were performed in R using RStudio.
 
 To run the code, install R (version 4.4.1 or later) and the required R packages listed above. The scripts can then be executed directly within RStudio.
+## Usage
+The scripts `cortical_analysis.R` and `cortical_analysis.R` accept Cell Ranger count matrices in Matrix Market format (mtx, as in the filtered_feature_bc_matrix directory).
+As example matrix is provided in this repository. To run the scripts 
+
 
 ## Data Availability
 
