@@ -1,10 +1,19 @@
-# Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly
+# Contents
+- [Overview](#overview)
+- [Repo Contents](#repo-contents)
+- [System Requirements](#system-requirements)
+- [License](#license)
+- [Issues](#issues)
+- [Citation](#citation)
+
+
+# Overview
 <p>
   This repository contains the code used to generate the data presented in the manuscript <em>“Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly.”</em>
 The following scripts are included:
 
 </p>
-
+#repo-contents
 <p>The following scripts:</p>
 <ul>
   <li><code>cortical_analysis.R</code></li>
@@ -27,6 +36,8 @@ The following scripts are included:
   The script <code>label_transfer.R</code> was used to annotate the cortical
   scRNA-seq dataset using the Braun et al. dataset as a reference.
 </p>
-
-## License
+#system-requirements
+#License
 This project is licensed under the MIT License – see the LICENSE file for details.
+#issues
+#citation
