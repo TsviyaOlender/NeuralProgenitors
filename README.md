@@ -13,7 +13,7 @@
 The following scripts are included:
 
 </p>
-#repo-contents
+# repo-contents
 <p>The following scripts:</p>
 <ul>
   <li><code>cortical_analysis.R</code></li>
@@ -36,8 +36,8 @@ The following scripts are included:
   The script <code>label_transfer.R</code> was used to annotate the cortical
   scRNA-seq dataset using the Braun et al. dataset as a reference.
 </p>
-#system-requirements
-#License
+# system-requirements
+# License
 This project is licensed under the MIT License – see the LICENSE file for details.
-#issues
-#citation
+# issues
+# citation
