@@ -48,9 +48,7 @@ To run the code, install R (version 4.4.1 or later) and the required R packages 
 
 ## Data Availability
 
-All raw and processed data of the scRNAseq as well as the rostal bulk RNAseq used in this study are publicly available from the Gene Expression Omnibus (GEO):
-
-Accession number: GSE229988
+All raw and processed data of the scRNAseq as well as the rostal bulk RNAseq used in this study are publicly available from the Gene Expression Omnibus (GEO):GSE229988
 
 Download the data and place it in your local home directory.
 ## License
