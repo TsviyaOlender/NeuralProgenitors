@@ -15,22 +15,31 @@ This repository contains the code used to generate the data and the figures pres
 `cortical_analysis.R` and `cortical_analysis.R` are the main scripts used to analyze the scRNA-seq data. 
 `read_human_embryonic_atlas.R` was used to process the data from Braun et al. (2023), *Science* (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077), and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution.
 `label_transfer.R` was used to annotate the cortical scRNA-seq dataset using the Braun et al. dataset as a reference.
+## System Requirements
 
+### Hardware requirements
+This analysis was performed on a standard workstation.  
+For processing large scRNA-seq datasets, at least 16 GB RAM is recommended.
 
+### Software requirements
+- R (version 4.4.1)
+- Operating system: Linux (Red Hat Enterprise Linux 9.4)
 
-## system-requirements
-- R (>= 4.4.0)
-- RStudio (optional, but recommended)
-The following R packages are required:
-- Seurat (>= 4.3.0)
-- dplyr
-- ggplot2
-- patchwork
-- Matrix
+### R package dependencies
+The following R packages were used:
 
-### Operating systems
-Tested on:
-- Linux (Ubuntu 22.04)
+- Seurat (5.3.0)
+- SeuratObject (5.0.2)
+- dplyr (1.1.4)
+- ggplot2 (3.5.1)
+- patchwork (1.2.0)
+- cowplot (1.1.3)
+- rio (1.2.3)
+- gridExtra (2.3)
+- scCustomize (3.0.1)
+- SingleR (2.6.0)
+- SingleCellExperiment (1.26.0)
+
 ## License
 This project is licensed under the MIT License – see the LICENSE file for details.
 ## issues
