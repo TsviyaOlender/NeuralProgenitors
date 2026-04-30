@@ -2,7 +2,7 @@
 - [Overview](#overview)
 - [Repo Contents](#repo-contents)
 - [System Requirements](#system-requirements)
-- [Installation guide] (#Installation guide)
+- [Installation guide](#Installation-guide)
 - [License](#license)
 - [Issues](#issues)
 - [Citation](#citation)
