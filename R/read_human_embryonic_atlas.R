@@ -5,7 +5,18 @@ library(scCustomize)
 ###########################################################
 source("seurat_functions_V2.R")
 ###########################################################
-seurat.sub<-readRDS("human_embryonic_atlas/ClassRadialGlia_all_4Aug25.rds")
+# convert anndata object to Seurat
+###########################################################
+sce <- readH5AD("b40faec8-21d7-4d6c-aa69-4146503d3c64.h5ad")
+seurat.sub <- as.Seurat(sce,counts = "X", data = "X")
+cluster_stats <- Cluster_Stats_All_Samples(seurat_subect = seurat.sub, group_by_var = "tissue")
+##
+# save 
+writeRDS(seurat.sub,"/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_all_4Au
+g25.rds")
+###########################################################
+#continue analysis
+###########################################################
 Idents(seurat.sub)<-seurat.sub$assay
 sub<-subset(seurat.sub,idents="10x 3' v3")
 ##############################################
@@ -18,7 +29,6 @@ new_obj <- CreateSeuratObject(counts = counts, meta.data = sub@meta.data)
 sub<-new_obj
 #############################################################################
 #clean
-
 sub<-Add_Cell_QC_Metrics(sub, species = 'human',add_cell_cycle=F)
 Idents(sub)<-sub$assay
 VlnPlot(sub  , features = c("nFeature_RNA", "nCount_RNA", "percent_mito"), 
