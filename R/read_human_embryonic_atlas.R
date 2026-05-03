@@ -10,10 +10,6 @@ source("seurat_functions_V2.R")
 sce <- readH5AD("b40faec8-21d7-4d6c-aa69-4146503d3c64.h5ad")
 seurat.sub <- as.Seurat(sce,counts = "X", data = "X")
 cluster_stats <- Cluster_Stats_All_Samples(seurat_subect = seurat.sub, group_by_var = "tissue")
-##
-# save 
-writeRDS(seurat.sub,"/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_all_4Au
-g25.rds")
 ###########################################################
 #continue analysis
 ###########################################################
@@ -44,6 +40,8 @@ sub.1<-subset(sub.1,idents = c("Head","Brain"),invert=T)
 Idents(sub.1)<-sub.1$Age
 levels(sub.1$Age)
 sub.1<-subset(sub.1,idents = c("5","12","13","14"),invert=T)
+# save 
+writeRDS(seurat.sub,"/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_all_v3_sub.rds")
 ####################################################################################
 ## Remove mitochondrial genes and ribosomal genes
 sub.1<-remove_ribosomal(sub.1,'human')
