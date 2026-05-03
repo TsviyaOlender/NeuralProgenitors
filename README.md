@@ -56,6 +56,8 @@ The output is an .rds file with seurat object.
 
 To run the script `read_human_embryonic_atlas.R` you need to download the file b40faec8-21d7-4d6c-aa69-4146503d3c64.h5ad from cellxgene (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077)
 
+`label_transfer.R` uses the two rds files generated above.
+
 
 ## Data Availability
 
