@@ -1,6 +1,6 @@
 library(SingleR)
 library(SingleCellExperiment)
-orly<-readRDS("/home/labs/olenderlab/lvzvia/reinerlab/Tamar_scRNA_NDE_jan23/analysis/seurat.analysis_30Jan23_25PCA_res0.6.rds")
+orly<-readRDS("seurat_obj_100cells.rds")
 orly<-NormalizeData(orly)
 orly<-FindVariableFeatures(orly)
 orly<-ScaleData(orly)
