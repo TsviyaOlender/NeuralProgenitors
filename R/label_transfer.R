@@ -1,14 +1,13 @@
 library(SingleR)
 library(SingleCellExperiment)
-orly<-readRDS("seurat_obj_100cells.rds")
-orly<-NormalizeData(orly)
-orly<-FindVariableFeatures(orly)
-orly<-ScaleData(orly)
-DefaultAssay(orly)<-"RNA"
+my.obj<-readRDS("seurat_obj_100cells.rds")
+my.obj<-NormalizeData(my.obj)
+my.obj<-FindVariableFeatures(my.obj)
+my.obj<-ScaleData(my.obj)
+DefaultAssay(my.obj)<-"RNA"
 #
 sub<-readRDS("/home/labs/olenderlab/lvzvia/MyRScripts/scRNA_pipline/human_embryonic_atlas/ClassRadialGlia_v3_4Aug25.rds")
-DefaultAssay(sub)<-'sketch'
-counts_mat <- GetAssayData(sub, assay = "sketch", slot = "counts")
+counts_mat <- GetAssayData(sub, assay = "RNA", slot = "counts")
 query <- CreateSeuratObject(counts = counts_mat, meta.data = sub@meta.data)
 #
 query<-NormalizeData(query)
@@ -17,17 +16,15 @@ query <- ScaleData(query)
 query <- RunPCA(query)
 query<-RunUMAP(query, dims = 1:40, verbose = FALSE)
 #
-#flex_xen_common_genes <- intersect(rownames(query), rownames(orly))
-
-pancreas.anchors <- FindTransferAnchors(reference = query, query = orly, dims = 1:30,
+proj.anchors <- FindTransferAnchors(reference = query, query = my.obj, dims = 1:30,
                                         reference.reduction = "pca")
-predictions <- TransferData(anchorset = pancreas.anchors, refdata = query$Region, dims = 1:30)
-orly <- AddMetaData(orly, metadata = predictions)
-Idents(orly)<-orly$predicted.id
-DimPlot_scCustom(orly, split.by = "genotypes",label = F)
-FeaturePlot_scCustom(orly,features = "prediction.score.max",split.by = "genotypes")
+predictions <- TransferData(anchorset = proj.anchors, refdata = query$Region, dims = 1:30)
+my.obj <- AddMetaData(my.obj, metadata = predictions)
+Idents(my.obj)<-my.obj$predicted.id
+DimPlot_scCustom(my.obj, split.by = "genotypes",label = F)
+FeaturePlot_scCustom(my.obj,features = "prediction.score.max",split.by = "genotypes")
 
-Cluster_Highlight_Plot(seurat_object = orly, cluster_name = "forebrain", highlight_color = "forestgreen",
+Cluster_Highlight_Plot(seurat_object = my.obj, cluster_name = "forebrain", highlight_color = "forestgreen",
                        background_color = "lightgray")
 my_colors=c("#5A5156FF", "#E4E1E3FF", "#F6222EFF" ,"#FE00FAFF" ,"#16FF32FF", "#3283FEFF", "#FEAF16FF", "#B00068FF")
 my_colors <- c(
@@ -41,9 +38,9 @@ my_colors <- c(
   "#FFB3E6"   # Light Pink
 )
 desired_order <- c("WT","KO")
-orly$genotypes <- factor(orly$genotypes, levels = desired_order)
-DimPlot_scCustom(orly,colors_use = my_colors,split.by = "genotypes",label=F,pt.size=1)
+my.obj$genotypes <- factor(my.obj$genotypes, levels = desired_order)
+DimPlot_scCustom(my.obj,colors_use = my_colors,split.by = "genotypes",label=F,pt.size=1)
 
 svg("UMAP_by_Miri_1.svg", width = 15, height = 8)  # size in inches
-DimPlot_scCustom(orly,colors_use = my_colors,split.by = "genotypes",label=F,pt.size=2)
+DimPlot_scCustom(my.obj,colors_use = my_colors,split.by = "genotypes",label=F,pt.size=2)
 dev.off()
