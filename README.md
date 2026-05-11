@@ -69,13 +69,19 @@ To run the script `read_human_embryonic_atlas.R` you need to download the file b
 `Creating_Seurat_object for Fig 3.R` accepts the two demo files, WT.rds and KO.rds. The output is called cell_cycle_regressed.rds.
 
 `Fig3b.R` accepts the file cell_cycle_regressed.rds, and generates the file clustered.rds as an output.
+
+`MakingHumanReferenceSO for Fig 3e_i.R`. The input data can be downloaded from: The embryonic human brain cell atlas, https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077. An output demo, HumanReference.rds, is avaliable here.
+
+`Fig 3f_i.R` accepts the files clustered.rds and HumanReference.rds.
+
 ## Demo files
 Demo files can be found under the **data folder**.
 
 - W3_E3 input matrices for the script `cortical_analysis.R` and `rostal_analysis.R`.
 - WT.rds, KO.rds input matrices for `Creating_Seurat_object for Fig 3.R`
-- cell_cycle_regressed.rds input for `Fig3b.R`
+- cell_cycle_regressed.rds,clustered.rds input and output of `Fig3b.R`
 - clustered.rds the output of `Fig3b.R`
+- HumanReference.rds output of `MakingHumanReferenceSO for Fig 3e_i.R`.
 
 ## Data Availability
 
