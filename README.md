@@ -65,9 +65,17 @@ The output is an .rds file with seurat object.
 To run the script `read_human_embryonic_atlas.R` you need to download the file b40faec8-21d7-4d6c-aa69-4146503d3c64.h5ad from cellxgene (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077)
 
 `label_transfer.R` uses the two rds files generated above.
-## Demo
+
+`Creating_Seurat_object for Fig 3.R` accepts the two demo files, WT.rds and KO.rds. The output is called cell_cycle_regressed.rds.
+
+`Fig3b.R` accepts the file cell_cycle_regressed.rds, and generates the file clustered.rds as an output.
+## Demo files
 Demo files can be found under the **data folder**.
-W3_E3- input matrices for the script `cortical_analysis.R` and `rostal_analysis.R`.
+
+- W3_E3 input matrices for the script `cortical_analysis.R` and `rostal_analysis.R`.
+- WT.rds, KO.rds input matrices for `Creating_Seurat_object for Fig 3.R`
+- cell_cycle_regressed.rds input for `Fig3b.R`
+- clustered.rds the output of `Fig3b.R`
 
 ## Data Availability
 
