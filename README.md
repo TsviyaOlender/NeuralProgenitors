@@ -46,6 +46,12 @@ The following R packages were used:
 - SingleR (2.6.0)
 - SingleCellExperiment (1.26.0)
 - zellkonverter (to convert H5AD to seurat)
+
+  The script `MakingHumanReferenceSO for Fig 3e_i.R` requires
+- BiocManager (1.30.25)
+- rhdf5 (2.42.1)
+- hdf5r (1.3.12
+
 ## Installation guide
 All analyses were performed in R using RStudio.
 
