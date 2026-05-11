@@ -18,6 +18,9 @@ This repository contains the code used to generate the data and the figures pres
 `cortical_analysis.R` and `rostal_analysis.R` are the main scripts used to analyze the scRNA-seq data. 
 `read_human_embryonic_atlas.R` was used to process the data from Braun et al. (2023), *Science* (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077), and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution. This script uses functions defined in `seurat_functions_V2.R`.
 `label_transfer.R` was used to annotate the cortical scRNA-seq dataset using the Braun et al. dataset as a reference.
+
+The scripts `Creating_Seurat_object for Fig 3.R`, `Fig3b.R` and `MakingHumanReferenceSO for Fig 3e_i.R` were used to create the data shown in Fig. 3. `Creating_Seurat_object for Fig 3.R` Merges seurat objects of the WT and KO count data, and Performs cell cycle regression. `Fig3b.R` generates the UMAP plot in Figure 3 panel b. `MakingHumanReferenceSO for Fig 3e_i.R` Generates Seurat object consisting of neural progenitors from human p.c.w. 5 and 5.5 brain. The original source is reported in Braun, Emelie, et al. "Comprehensive cell atlas of the first-trimester developing human brain." Science 382.6667 (2023): eadf1226. The script `Projection for Fig 3f_i.R` projects NMC single cell trascriptome over that of the in vivo human embryonic dataset. 
+
 ## System Requirements
 
 ### Hardware requirements
