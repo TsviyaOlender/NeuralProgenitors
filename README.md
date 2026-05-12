@@ -20,7 +20,7 @@ This repository contains the code used to generate the data and the figures pres
 `read_human_embryonic_atlas.R` was used to process the data from Braun et al. (2023), *Science* (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077), and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution. This script uses functions defined in `seurat_functions_V2.R`.
 `label_transfer.R` was used to annotate the cortical scRNA-seq dataset using the Braun et al. dataset as a reference.
 
-The scripts `Creating_Seurat_object_for_Fig_3.R`, `Fig3b.R` and `MakingHumanReferenceSO_for_Fig_3e_i.R` were used to create the data shown in Fig. 3. `Creating_Seurat_object_for_Fig_3.R` merges Seurat objects of WT and KO count data, and performs cell cycle regression. `Fig3b.R` generates the UMAP plot in Figure 3 panel b. `MakingHumanReferenceSO_for_Fig_3e_i.R` Generates Seurat object consisting of neural progenitors from human p.c.w. 5 and 5.5 brain. The original source is reported in Braun, Emelie, et al. "Comprehensive cell atlas of the first-trimester developing human brain." Science 382.6667 (2023): eadf1226. The script `Projection for Fig 3f_i.R` projects NMC single cell trascriptome over that of the in vivo human embryonic dataset. 
+The scripts `Creating_Seurat_object_for_Fig_3.R`, `Fig3b.R` and `MakingHumanReferenceSO_for_Fig_3e_i.R` were used to create the data shown in Fig. 3. `Creating_Seurat_object_for_Fig_3.R` merges Seurat objects of WT and KO count data, and performs cell cycle regression. `Fig3b.R` generates the UMAP plot in Figure 3 panel b. `MakingHumanReferenceSO_for_Fig_3e_i.R` Generates Seurat object consisting of neural progenitors from human p.c.w. 5 and 5.5 brain. The original source is reported in Braun, Emelie, et al. "Comprehensive cell atlas of the first-trimester developing human brain." Science 382.6667 (2023): eadf1226. The script `Projection_for_Fig_3f_i.R` projects NMC single cell trascriptome over that of the in vivo human embryonic dataset. 
 
 ## System Requirements
 
@@ -66,13 +66,13 @@ To run the script `read_human_embryonic_atlas.R` you need to download the file b
 
 `label_transfer.R` uses the two rds files generated above.
 
-`Creating_Seurat_object for Fig 3.R` accepts the two demo files, WT.rds and KO.rds. The output is called cell_cycle_regressed.rds.
+`Creating_Seurat_object_for_Fig_3.R` accepts the two demo files, WT.rds and KO.rds. The output is called cell_cycle_regressed.rds.
 
 `Fig3b.R` accepts the file cell_cycle_regressed.rds, and generates the file clustered.rds as an output.
 
 `MakingHumanReferenceSO_for_Fig_3e_i.R`. The input data can be downloaded from: The embryonic human brain cell atlas, https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077. An output demo, HumanReference.rds, is avaliable here.
 
-`Fig 3f_i.R` accepts the files clustered.rds and HumanReference.rds.
+`Fig_3f_i.R` accepts the files clustered.rds and HumanReference.rds.
 
 ## Demo files
 Demo files can be found under the **data folder**.
