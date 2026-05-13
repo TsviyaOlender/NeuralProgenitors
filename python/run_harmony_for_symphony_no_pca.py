@@ -19,24 +19,10 @@ output_file = args.output_file
 if(args.anndata_ref is not None):
     adata_ref_file = args.anndata_ref
     adata_ref = sc.read(adata_ref_file)
-#elif(args.workspace is not None):
-#    path = args.workspace+".h5ad"
-#    check_file = os.path.isfile(path)
-#    if(check_file):
-#        adata_ref = sc.read(path)
-#    else:
-#        db = shoji.connect()
-#        ws = db["builds"]["sten"]["humandev20220523"][args.workspace]
-#        adata_ref = ws.create_anndata()
-#        adata_ref.write(args.workspace+'.h5ad')
+
 else:
     sys.exit("Can't find workspace ot anndata")
-#sc.pp.normalize_total(adata_ref, target_sum=1e5)
-#sc.pp.log1p(adata_ref)
-#adata_ref.var_names = adata_ref.var['Gene']
 
-#adata_ref.raw = adata_ref
-#adata_ref = adata_ref[:, adata_ref.var['SelectedFeatures']]
 sc.pp.scale(adata_ref, max_value=10)
 sc.pp.pca(adata_ref, n_comps=30, zero_center=False,svd_solver='arpack')
 sc.pp.neighbors(adata_ref, n_neighbors=15)
