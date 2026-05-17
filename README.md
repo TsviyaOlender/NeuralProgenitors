@@ -90,6 +90,8 @@ Demo files can be found under the **data folder**.
 - clustered.rds the output of `Fig3b.R`
 - HumanReference.rds output of `MakingHumanReferenceSO_for_Fig_3e_i.R`.
 
+The software is designed to run on Linux/Unix systems; expected runtime on a typical workstation is less than 10 minutes.
+
 ## Data Availability
 
 All raw and processed data of the scRNAseq as well as the rostal bulk RNAseq used in this study are publicly available from the Gene Expression Omnibus (GEO):GSE229988
