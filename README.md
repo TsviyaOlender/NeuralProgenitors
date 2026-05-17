@@ -86,6 +86,9 @@ To run the script `read_human_embryonic_atlas.R` you need to download the file b
 
 `Fig_3f_i.R` accepts the files clustered.rds and HumanReference.rds.
 
+To run the python script use:
+run_harmony_for_symphony_no_pca.py -ar anndata.h5ad -o anndata_harmony_symp
+
 #### Installation time
 Installation time is minimal (<5 minutes) assuming R and RStudio are already installed. The analysis is performed via R scripts/Jupither and requires installation of standard R package dependencies only and standard Python and python librarues.
 
@@ -98,7 +101,9 @@ Demo files can be found under the **data folder**.
 - clustered.rds the output of `Fig3b.R`
 - HumanReference.rds output of `MakingHumanReferenceSO_for_Fig_3e_i.R`.
 
-The software is designed to run on Linux/Unix systems; expected runtime on a typical workstation is less than 10 minutes.
+pallium_subset.h5ad to be used with the python script/Jupither notebook.
+
+The scripts in this repository were designed to run on Linux/Unix systems; expected runtime on a typical workstation is less than 10 minutes.
 
 ## Data Availability
 
