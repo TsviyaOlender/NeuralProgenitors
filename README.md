@@ -22,6 +22,8 @@ This repository contains the code used to generate the data and the figures pres
 
 The scripts `Creating_Seurat_object_for_Fig_3.R`, `Fig3b.R` and `MakingHumanReferenceSO_for_Fig_3e_i.R` were used to create the data shown in Fig. 3. `Creating_Seurat_object_for_Fig_3.R` merges Seurat objects of WT and KO count data, and performs cell cycle regression. `Fig3b.R` generates the UMAP plot in Figure 3 panel b. `MakingHumanReferenceSO_for_Fig_3e_i.R` Generates Seurat object consisting of neural progenitors from human p.c.w. 5 and 5.5 brain. The original source is reported in Braun, Emelie, et al. "Comprehensive cell atlas of the first-trimester developing human brain." Science 382.6667 (2023): eadf1226. The script `Projection_for_Fig_3f_i.R` projects NMC single cell trascriptome over that of the in vivo human embryonic dataset. 
 
+- `Python`
+
 ## System Requirements
 
 ### Hardware requirements
