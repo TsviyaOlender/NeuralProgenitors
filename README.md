@@ -78,7 +78,7 @@ To run the script `read_human_embryonic_atlas.R` you need to download the file b
 
 `Fig_3f_i.R` accepts the files clustered.rds and HumanReference.rds.
 
-# Installation time
+#### Installation time
 Installation time is minimal (<5 minutes) assuming R and RStudio are already installed. The analysis is performed via R scripts/Jupither and requires installation of standard R package dependencies only and standard Python and python librarues.
 
 ## Demo files
