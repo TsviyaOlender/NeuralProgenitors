@@ -14,7 +14,7 @@
 This repository contains the code used to generate the data and the figures presented in the manuscript <em>“Neural Progenitors as a Novel Pathogenic Mechanism in Microcephaly.”</em>
 
 ## Repo Contents
-- `R`
+- `R (v4.4.1)`
   
 `cortical_analysis.R` and `rostal_analysis.R` are the main scripts used to analyze the scRNA-seq data. 
 `read_human_embryonic_atlas.R` was used to process the data from Braun et al. (2023), *Science* (https://cellxgene.cziscience.com/collections/4d8fed08-2d6d-4692-b5ea-464f1d072077), and to generate the scRNA reference matrix for CIBERSORT bulk deconvolution. This script uses functions defined in `seurat_functions_V2.R`.
@@ -22,7 +22,7 @@ This repository contains the code used to generate the data and the figures pres
 
 The scripts `Creating_Seurat_object_for_Fig_3.R`, `Fig3b.R` and `MakingHumanReferenceSO_for_Fig_3e_i.R` were used to create the data shown in Fig. 3. `Creating_Seurat_object_for_Fig_3.R` merges Seurat objects of WT and KO count data, and performs cell cycle regression. `Fig3b.R` generates the UMAP plot in Figure 3 panel b. `MakingHumanReferenceSO_for_Fig_3e_i.R` Generates Seurat object consisting of neural progenitors from human p.c.w. 5 and 5.5 brain. The original source is reported in Braun, Emelie, et al. "Comprehensive cell atlas of the first-trimester developing human brain." Science 382.6667 (2023): eadf1226. The script `Projection_for_Fig_3f_i.R` projects NMC single cell trascriptome over that of the in vivo human embryonic dataset. 
 
-- `Python`
+- `Python(v3.2.0)`
   
 `NDE1_cortical_organoids_analysis-FP.ipynb`- Jupyter notebook containing the code used to generate Figures 1c–g, 2b, S1a–c, and S2o–r. `run_harmony_for_symphony_no_pca.py` runs harmony.py before running symphony alignment.
 
