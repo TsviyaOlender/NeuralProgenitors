@@ -57,6 +57,14 @@ The script `MakingHumanReferenceSO_for_Fig_3e_i.R` requires
 - rhdf5 (2.42.1)
 - hdf5r (1.3.12)
 
+  ### Python dependencies
+- matplotlib==3.10.9
+- numpy==2.4.4
+- pandas==3.0.3
+- scanpy==1.11.0
+- anndata==0.11.3
+- seaborn==0.13.2
+
 ## Installation guide
 All analyses were performed in R using RStudio.
 
